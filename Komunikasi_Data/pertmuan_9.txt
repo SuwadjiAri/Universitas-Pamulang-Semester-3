@@ -1,0 +1,23 @@
+Elemen sinyal adalah tiap pulsa dari sinyal digital. Data binary ditransmisikan dengan mengencodekan tiap bit data menjadi elemen-elemen sinyal. Sinyal unipolar adalah semua elemen sinyal yang mempunyai tanda yang sama, yaitu positif semua atau negatif semua. Sinyal polar adalah elemen-elemen sinyal dimana salah satu logicstatenya diwakili oleh level tegangan positif dan yang lainnya oleh level tegangan negatif.
+
+
+Tugas-tugas receiver dalam mengartikan sinyal-sinyal digital :
+• receiver harus mengetahui timing dari tiap bit
+• receiver harus menentukan apakah level sinyaldalam posisi bit high(1) atau low(0)
+
+
+Faktor yang menentukan sukses dari receiver dalam mengartikan sinyal yang datang :
+
+• Datarate (kecepatan data): peningkatan data rate akan meningkatkan bit error rate (kecepatan error dari bit).
+• S/N : peningkatan S/N akan menurunkan bit error rate.
+• Bandwidth : peningkatan bandwidth dapat meningkatkan data rate.
+
+
+
+Lima faktor yang perlu dinilai atau dibandingkan dari berbagai teknik komunikasi :
+
+• Spektrum sinyal : disain sinyal yang bagus harus mengkonsentrasikan kekuatan transmisinya padadaerahtengah daribandwidth transmisi; untuk mengatasi distorsi dalam penerimaan sinyal digunakan disainkode yang sesuai dengan bentuk dari spektrum sinyal transmisi.
+• Clocking : menentukan awal dan akhir dari tiap posisi bit dengan mekanisme synchronisasi yang berdasarkan pada sinyal transmisi.
+• Deteksi error : dibentuk dalamskema fisik encoding sinyal.
+• Interferensi sinyal dan Kekebalan terhadap noise
+• Biaya dan kesulitan: semakin tinggi kecepatan pensinyalan

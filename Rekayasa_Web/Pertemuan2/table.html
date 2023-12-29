@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabel Angka 1-10</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 30%;
+        }
+
+        table, th, td {
+            border: none; /* Menghapus semua garis tepi sel */
+            text-align: center;
+            padding: 10px;
+        }
+
+        .number-cell {
+            width: 50px; /* Lebar kolom angka disesuaikan */
+            border-bottom: 1px solid black; /* Garis bawah untuk kolom angka */
+            border-top: 1px solid black; 
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+
+        .empty-cell {
+            width: 1px; /* Lebar kolom angka disesuaikan */
+            border-top: 1px solid black; 
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Arif Frima Ari Suwadji (221011700443)</h2>
+    <table>
+        <tr>
+            <td colspan="2" class="number-cell">1</td>
+            <td colspan="4" class="number-cell">2</td>
+        </tr>
+        <tr>
+            <td rowspan="5" colspan="2" class="number-cell">3</td>
+            <td colspan="4" class="empty-cell" style="border-bottom: white;"></td>
+        </tr>
+        <tr>
+            <td class="empty-cell" rowspan="4" style="border-right: white; border-top:white; width:0%"></td>
+            <td colspan="2" class="number-cell">4</td>
+            <td class="empty-cell" rowspan="4" style="border-top:white; border-left:white;"></td>
+        </tr>
+        
+        <tr>
+            <td class="number-cell" style="width: 30%;">5</td>
+            <td class="number-cell" style="width: 30%">6</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="empty-cell" style="border-left: white; border-right: white; border-bottom:white;"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="empty-cell" style="border-left: white; border-right: white; border-top: white;"></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="empty-cell" style="border-bottom: white;"></td>
+            <td colspan="2" class="number-cell" rowspan="6">10</td>
+        <tr>
+        <tr>
+            <td class="empty-cell" rowspan="2" style="border-bottom: white; border-top: white;"></td>
+            <td rowspan="2" class="number-cell" style="width:40%">7</td>
+            <td class="number-cell" style="width:0%" colspan="2">8</td>
+        <tr>
+            <td class="number-cell" colspan="2">9</td>
+        </tr>
+        <tr><td colspan="5" class="empty-cell" style="border-right:white; border-top: white; border-bottom: white;"></td></tr>
+        <tr><td colspan="5" class="empty-cell" style="border-top:white;"></td></tr>
+    </table>
+</body>
+</html>

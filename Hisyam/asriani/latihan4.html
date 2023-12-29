@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fahrenheit to Celsius Converter</title>
+</head>
+<body onLoad="window.defaultStatus='Selamat Belajar JavaScript'">
+  <script type="text/javascript">
+    function convertToCentigrade(degFahren) {
+      var degCent;
+      degCent = (5/9) * (degFahren - 32);
+      return degCent;
+    }
+
+    var degFahren = [212, 32, -459.15];
+    var degCent = [];
+
+    for (var loopCounter = 0; loopCounter <= 2; loopCounter++) {
+      degCent[loopCounter] = convertToCentigrade(degFahren[loopCounter]);
+    }
+
+    for (var loopCounter = 2; loopCounter >= 0; loopCounter--) {
+      document.write("Value " + loopCounter + " was " + degFahren[loopCounter] +
+        " degrees Fahrenheit which is " + degCent[loopCounter] + " degrees centigrade<br>");
+    }
+  </script>
+</body>
+</html>

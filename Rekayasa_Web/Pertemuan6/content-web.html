@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout - Arif Frima Ari Suwadji</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 10px 0;
+      border: blue 1px solid;
+    }
+    .container {
+      display: flex;
+      flex: 1;
+    }
+    .sidebar {
+      border: 1px green solid;
+      padding: 20px;
+      padding-bottom: 30%;
+      flex: 0 0 250px;
+    }
+    
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .top {
+      flex: 1;
+      border: 1px rosybrown solid;
+    }
+    .child-content {
+      display: flex;
+      flex: 1;
+    }
+    .content {
+      padding: 20px;
+      flex: 1;
+      border: yellow 1px solid;
+    }
+    .right {
+      padding: 20px;
+      flex: 0 0 250px;
+      border: 1px goldenrod solid;
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      border: 1px red solid;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Header</h1>
+  </header>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+    </div>
+    <div class="main-content">
+      <div class="top">
+        <h2>Top</h2>
+      </div>
+      <div class="child-content">
+        <div class="content">
+          <h2>Content</h2>
+        </div>
+        <div class="right">
+          <h2>Right</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <h2>Footer</h2>
+  </footer>
+</body>
+</html>
